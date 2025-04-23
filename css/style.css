@@ -6,12 +6,15 @@
     background-position: center;
     background-size: cover;
 }
-.bg-image2 {
+.bg-imaga {
     background-image: url("../img/6/04.jpg");
     background-color: #cccccc;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
+}
+.bg-color {
+    background-color: #282828;
 }
 
