@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css.map">
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/splide.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -72,7 +73,7 @@
             <div class="row ps-5">
                 <div class="col-6 py-5 ps-5 px-5">
                     <div class="h1 col-4 pt-5 ">
-                        <span class="text-danger">Dining</span>
+                        <span class="text-danger ">Dining</span>
                         On The Lake
 
                     </div>
@@ -97,32 +98,54 @@
 
             </div>
 
-            <div class="row">
-                <div class="col-3">
-                    <img src="img/6/0201.jpg" alt="" class="img-fluid">
-
+            <div class="container-fluid gx-0">
+                <div class="splide" role="group" aria-label="Splide Basic HTML Example">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <img src="img/6/0201.jpg" alt="" class="w-100 object-fit-cover" style="height: 400px" />
+                            </li>
+                            <li class="splide__slide">
+                                <img src="img/6/0202.jpg" alt="" class="w-100 object-fit-cover" style="height: 400px" />
+                            </li>
+                            <li class="splide__slide">
+                                <img src="img/6/0203.jpg" alt="" class="w-100 object-fit-cover" style="height: 400px" />
+                            </li>
+                            <li class="splide__slide">
+                                <img src="img/6/0204.jpg" alt="" class="w-100 object-fit-cover "
+                                    style="height: 400px" />
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="col-2">
-                    <img src="img/6/0202.jpg" alt="" class="img-fluid" >
-
-                </div>
-                <div class="col-3">
-                    <img src="img/6/0203.jpg" alt="" class="img-fluid">
-
-                </div>
-                <div class="col-3">
-                    <img src="img/6/0204.jpg" alt="" class="img-fluid">
-
-                </div>
-
-
-               
-
             </div>
 
         </div>
 
     </div>
+
+    <!-- Section 2 -->
+    <div class="container-fluid ">
+        <div class="bg-image py-5 ">
+            <div class="row">
+                <div class="h3 py-5 text-white ps-5 px-5">
+                    MUST-TRY AMERICAN FOODS
+
+                </div>
+                <div class="h1 text-white fw-bold py-5 ps-5">
+                    Fast Food
+                </div>
+
+                <div>
+                    Image from Freepik
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
 
 
 
@@ -148,15 +171,17 @@
     <!-- Activating Splider -->
 
     <script>
-        var splide = new Splide(".splide", {
-            type: "Loop",
-            autoplay: true,
-            interval: 2000,
-            pauseOnHover: false,
-            pauseOnFocus: false,
-            arrows: false,
-            pagination: false,
-
+        document.addEventListener("DOMContentLoaded", function () {
+            var splide = new Splide(".splide", {
+                type: "loop",
+                autoplay: true,
+                interval: 3000,
+                arrows: false,
+                pagination: false,
+                pauseOnHover: false,
+                pauseOnFocus: false,
+            });
+            splide.mount();
         });
 
     </script>
