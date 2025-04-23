@@ -18,3 +18,11 @@
     background-color: #282828;
 }
 
+.bg-imagi {
+    background-image: url("../img/6/05.jpg");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
