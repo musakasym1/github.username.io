@@ -154,7 +154,7 @@
 
 
     <!-- Section 3 -->
-    <div class="container-fluid">
+    <div class="container-fluid pb-5">
         <div class="bg-imaga py-5">
             <div class="row">
                 <div data-aos="fade-up" class="col-4 py-5">
@@ -180,7 +180,7 @@
                 <div data-aos="fade-up" class="col-4 py-5">
                     <div class="bg-color">
                         <div>
-                            <div class="h5 text-center text-white pt-5">Fresh Food</div>
+                            <div class="h5 text-center text-white pt-5">Dinner Meals</div>
                             <div class=" py-5 text-secondary col-10 ps-5">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
                                 pariatur deserunt delectus dicta. Architecto a adipisci, quaerat
@@ -200,7 +200,7 @@
                 <div data-aos="fade-up" class="col-4 py-5">
                     <div class="bg-color">
                         <div>
-                            <div class="h5 text-center text-white pt-5">Fresh Food</div>
+                            <div class="h5 text-center text-white pt-5">Classic Menu</div>
                             <div class=" py-5 text-secondary col-10 ps-5">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
                                 pariatur deserunt delectus dicta. Architecto a adipisci, quaerat
@@ -220,7 +220,7 @@
                 <div data-aos="fade-up" class="col-4 py-5">
                     <div class="bg-color">
                         <div>
-                            <div class="h5 text-center text-white pt-5">Fresh Food</div>
+                            <div class="h5 text-center text-white pt-5">Chef's Special </div>
                             <div class=" py-5 text-secondary col-10 ps-5">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
                                 pariatur deserunt delectus dicta. Architecto a adipisci, quaerat
@@ -240,7 +240,7 @@
                 <div data-aos="fade-up" class="col-4 py-5">
                     <div class="bg-color">
                         <div>
-                            <div class="h5 text-center text-white pt-5">Fresh Food</div>
+                            <div class="h5 text-center text-white pt-5">Pasta & Pizza</div>
                             <div class=" py-5 text-secondary col-10 ps-5">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
                                 pariatur deserunt delectus dicta. Architecto a adipisci, quaerat
@@ -260,7 +260,7 @@
                 <div data-aos="fade-up" class="col-4 py-5">
                     <div class="bg-color">
                         <div>
-                            <div class="h5 text-center text-white pt-5">Fresh Food</div>
+                            <div class="h5 text-center text-white pt-5">Vegan dishes</div>
                             <div class=" py-5 text-secondary col-10 ps-5">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
                                 pariatur deserunt delectus dicta. Architecto a adipisci, quaerat
@@ -290,72 +290,76 @@
         <div class="container-fluid py-1">
             <div class="bg-imagi py-5">
                 <div class="row">
-                    <div data-aos="fade-up" class="col-4 ps-5">
-                        <div class="bg-white text-center pt-5">
-                            <i class="bi bi-receipt h1"></i>
-                            <div class="text-center fw-bold py-2 ">
-                                Pizza & Roll
-                                <div class="col-11 py-5">
-                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, enim. Eius non
-                                    eaque, deleniti vitae odit officia ullam vel accusamus consectetur labore et aperiam
-                                    veritatis, sit pariatur optio cupiditate voluptatum?
-                                </div>
-                                <div>
-                                    <button class="btn btn-outline-danger rounded-5 px-5 text-black">VIEW MENU</button>
-                                </div>
+                     <div data-aos="fade-up" class="col-4 ps-5">
+                    <div class="bg-white text-center pt-5">
+                        <i class="bi bi-receipt h1"></i>
+                        <div class="text-center fw-bold py-2 ">
+                            Pizza & Roll
+                            <div class="col-11 py-5">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus,
+                                enim. Eius non
+                                eaque, deleniti vitae odit officia ullam vel accusamus consectetur
+                                labore et aperiam
+                                veritatis, sit pariatur optio cupiditate voluptatum?
                             </div>
-
+                            <div>
+                                <button class="btn btn-outline-danger rounded-5 px-5 text-black">VIEW
+                                    MENU</button>
+                            </div>
                         </div>
 
                     </div>
 
-
-                </div>
-                <div class="text-white ps-4 pt-3">
-                    <p>Image from <u>Freepik</u></p>
                 </div>
 
+
+
+            </div>
+            <div class="text-white ps-4 pt-3">
+                <p>Image from <u>Freepik</u></p>
             </div>
 
         </div>
 
+    </div>
 
 
 
 
-        <!-- Connecting my Scripts -->
-        <script src="js/bootstrap.bundle.min.js"></script>
-        <script src="js/bootstrap.bundle.min.js.map"></script>
-        <script src="js/aos.js"></script>
-        <script src="js/splide.min.js"></script>
-        <script>
-            // Activating AOS
-            AOS.init({
-                offset: 120,
-                duration: 400,
-                once: true,
 
+    <!-- Connecting my Scripts -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js.map"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/splide.min.js"></script>
+    <script>
+        // Activating AOS
+        AOS.init({
+            offset: 120,
+            duration: 400,
+            once: true,
+
+        });
+
+    </script>
+
+    <!-- Activating Splider -->
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var splide = new Splide(".splide", {
+                type: "loop",
+                autoplay: true,
+                interval: 3000,
+                arrows: false,
+                pagination: false,
+                pauseOnHover: false,
+                pauseOnFocus: false,
             });
+            splide.mount();
+        });
 
-        </script>
-
-        <!-- Activating Splider -->
-
-        <script>
-            document.addEventListener("DOMContentLoaded", function () {
-                var splide = new Splide(".splide", {
-                    type: "loop",
-                    autoplay: true,
-                    interval: 3000,
-                    arrows: false,
-                    pagination: false,
-                    pauseOnHover: false,
-                    pauseOnFocus: false,
-                });
-                splide.mount();
-            });
-
-        </script>
+    </script>
 </body>
 
 </html>
